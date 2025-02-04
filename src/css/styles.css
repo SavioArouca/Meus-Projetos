@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+ul{
+    list-style: none;
+}
+
+body {
+    background-image: url('imagens/summoners-rift.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.cabecalho {
+    background-color: rgb(12, 43, 2);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+.btn-seta.btn-voltar{
+    transform: rotatey(180deg);
+}
+
+.btn-seta{
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 7px 20px 0px;
+}
+
+.btn-seta:hover{
+    background-color: #e27739;
+}
+
+.cabecalho .titulo{
+    color: #ffffff;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.lista-cards{
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+
+.carta{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 4px;
+    gap: 2px;
+    position: absolute;
+}
+
+.carta.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.img-card{
+    border-radius: 5px;
+}
+
+.carta .nome{
+    font-size: 13px;
+    padding: 5px;
+    background: radial-gradient(circle, #d6b366, #d4c49e, #ceb070);
+    border: 2px solid #bba46e;
+    border-radius: 4px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.carta .nivel-card{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3px;
+    gap: 3px;
+}
+
+.nivel{
+    width: 20px;
+    height: 20px;
+    background-image: url(imagens/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.carta .img-card{
+    max-width: 260px;
+    align-self: center;
+}
+
+.carta .informa{
+    background-color: #d1c687b9;
+    border-radius: 4px;
+    background: radial-gradient(circle, #d4c49e,#ceb070);
+    border: 1px solid #000000;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.carta .informa .funcao{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #000000;
+    padding: 5px;
+}
+
+.carta .informa .funcao span{
+    font-size: 13px;
+}
+
+.carta .informa .desc{
+    padding: 10px;
+    max-height: 115px;
+    overflow-y: scroll;
+}
+
+.fundo-1{
+    background-image: url(imagens/fundo-5.jpg);
+    background-repeat: no-repeat;
+}
+
+.fundo-2{
+    background-image: url(imagens/fundo-1.jpg);
+    background-repeat: no-repeat;
+}
+
+.fundo-3{
+    background-image: url(imagens/fundo-7.jpg);
+}
+
+.fundo-4{
+    background-image: url(imagens/.fundo-3);
+}
+
+::-webkit-scrollbar-track{
+    background-color: #ceb070;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #b98d2f;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #e29e39;
+}
